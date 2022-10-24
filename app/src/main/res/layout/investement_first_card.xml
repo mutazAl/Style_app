@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_restaurant"
+        android:id="@+id/restaurant_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_xxl"
@@ -44,11 +44,11 @@
         android:text="@string/dollar_sign"
         android:textColor="@color/grey"
         android:textSize="@dimen/size_l"
-        app:layout_constraintStart_toStartOf="@id/text_restaurant"
-        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+        app:layout_constraintStart_toStartOf="@id/restaurant_name"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name" />
 
     <TextView
-        android:id="@+id/restaurant_win"
+        android:id="@+id/restaurant_sales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_xs"
@@ -57,9 +57,10 @@
         android:textColor="@color/grey"
         android:textSize="@dimen/size_l"
         app:layout_constraintStart_toEndOf="@id/currency"
-        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name" />
 
     <TextView
+        android:id="@+id/percentage_of_sales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_s"
@@ -67,10 +68,11 @@
         android:text="@string/icecream_parlour_win_percent"
         android:textColor="@color/grey"
         android:textSize="@dimen/size_l"
-        app:layout_constraintStart_toEndOf="@id/restaurant_win"
-        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+        app:layout_constraintStart_toEndOf="@id/restaurant_sales"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name" />
 
     <ImageView
+        android:id="@+id/line_grey"
         android:layout_width="170dp"
         android:layout_height="10dp"
         android:background="@drawable/line_style"
@@ -78,10 +80,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/line_orange"
         android:layout_width="30dp"
         android:layout_height="10dp"
         android:background="@drawable/achievement_card_style_first_week"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/restaurant_win" />
+        app:layout_constraintTop_toBottomOf="@id/restaurant_sales" />
 </androidx.constraintlayout.widget.ConstraintLayout>

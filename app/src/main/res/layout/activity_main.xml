@@ -18,14 +18,10 @@
             android:orientation="vertical">
 
             <include
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/view_user"
-                layout="@layout/user_name" />
+                android:id="@+id/welcome_card"
+                layout="@layout/welcome_card" />
 
             <include
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/include_user_card"
                 layout="@layout/user_card" />
 
@@ -47,15 +43,15 @@
                         layout="@layout/achievement_card_first_week" />
 
                     <include
-                        android:id="@+id/achievements_third_block"
+                        android:id="@+id/achievements_second_block"
                         layout="@layout/achievement_card_second_week" />
 
                     <include
-                        android:id="@+id/achievements_fourth_block"
+                        android:id="@+id/achievements_third_block"
                         layout="@layout/achievement_card_third_week" />
 
                     <include
-                        android:id="@+id/achievements_fifth_block"
+                        android:id="@+id/achievements_fourth_block"
                         layout="@layout/achievement_card_fourth_week" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -65,49 +61,48 @@
                 layout="@layout/investement_block" />
 
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_l">
+
+                <LinearLayout
+                    android:id="@+id/ice"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/padding_l"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/food"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <LinearLayout
-                        android:id="@+id/ice"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toStartOf="@id/food"
-                        app:layout_constraintTop_toTopOf="parent">
+                    <include
+                        android:id="@+id/investement_first_block"
+                        layout="@layout/investement_first_card" />
 
-                        <include
-                            android:id="@+id/investement_first_block"
-                            layout="@layout/investement_first_card" />
+                    <include
+                        android:id="@+id/investement_second_block"
+                        layout="@layout/investement_second_card" />
+                </LinearLayout>
 
-                        <include
-                            android:id="@+id/investement_second_block"
-                            layout="@layout/investement_second_card" />
-                    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/food"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4xl"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ice"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <LinearLayout
-                        android:id="@+id/food"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_4xl"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/ice"
-                        app:layout_constraintTop_toTopOf="parent">
+                    <include
+                        android:id="@+id/investement_third_block"
+                        layout="@layout/investement_third_card" />
 
-                        <include
-                            android:id="@+id/investement_third_block"
-                            layout="@layout/investement_third_card" />
-
-                        <include
-                            android:id="@+id/investement_fourth_block"
-                            layout="@layout/investement_fourth_card" />
-                    </LinearLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <include
+                        android:id="@+id/investement_fourth_block"
+                        layout="@layout/investement_fourth_card" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

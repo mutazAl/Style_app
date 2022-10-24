@@ -11,7 +11,7 @@
     android:layout_marginTop="@dimen/margin_3xl">
 
     <TextView
-        android:id="@+id/number"
+        android:id="@+id/week_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_xl"
@@ -21,14 +21,14 @@
         app:layout_constraintTop_toBottomOf="@id/image_walk" />
 
     <TextView
-        android:id="@+id/weeks"
+        android:id="@+id/text_week"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_s"
         android:layout_marginTop="@dimen/margin_xl"
         android:text="@string/week_streak"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/number"
+        app:layout_constraintStart_toEndOf="@id/week_number"
         app:layout_constraintTop_toBottomOf="@id/image_walk" />
 
 
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_walk"
-        app:layout_constraintBottom_toTopOf="@id/weeks"
+        app:layout_constraintBottom_toTopOf="@id/text_week"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
