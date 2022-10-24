@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TradingApp</string>
+    <string name="balance">YOUR BALANCE</string>
+    <string name="your_balance">23,052,82</string>
+    <string name="dollar_sign">$</string>
+    <string name="achievement">Achievements</string>
+    <string name="see_all">See all</string>
+    <string name="week_streak">Week streak</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="investement">Investement portfolio</string>
+    <string name="café">café</string>
+    <string name="café_win">10,230</string>
+    <string name="café_win_percent">(54.5%)</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="restaurant_win">2,210</string>
+    <string name="restaurant_win_percent">(32.5%)</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="fast_food_win">13.150</string>
+    <string name="fast_food_win_percent">(71.2%)</string>
+    <string name="icecream_parlour">Icecream Parlour</string>
+    <string name="icecream_parlour_win">1.120</string>
+    <string name="icecream_parlour_win_percent">(10.1%)</string>
+</resources>

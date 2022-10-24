@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xs">2dp</dimen>
+    <dimen name="margin_s">4dp</dimen>
+    <dimen name="margin_m">6dp</dimen>
+    <dimen name="margin_l">8dp</dimen>
+    <dimen name="margin_xl">10dp</dimen>
+    <dimen name="margin_xxl">12dp</dimen>
+    <dimen name="margin_3xl">14dp</dimen>
+    <dimen name="margin_4xl">16dp</dimen>
+    <dimen name="margin_big">36dp</dimen>
+    <dimen name="size_s">8sp</dimen>
+    <dimen name="size_m">10sp</dimen>
+    <dimen name="size_l">12sp</dimen>
+    <dimen name="size_xl">14sp</dimen>
+    <dimen name="size_xxl">16sp</dimen>
+    <dimen name="size_3xl">18sp</dimen>
+    <dimen name="size_large">34sp</dimen>
+    <dimen name="size_number">24sp</dimen>
+    <dimen name="card_padding">25dp</dimen>
+    <dimen name="padding_l">8dp</dimen>
+    <dimen name="user_card_padding_start_end">15dp</dimen>
+    <dimen name="image_width">60dp</dimen>
+    <dimen name="image_height">60dp</dimen>
+</resources>

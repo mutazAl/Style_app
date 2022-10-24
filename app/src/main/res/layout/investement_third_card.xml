@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_xl"
+    android:background="@drawable/user_card_style"
+    android:padding="@dimen/padding_l">
+
+
+    <ImageView
+        android:id="@+id/image_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icecream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_more_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxl"
+        android:text="@string/icecream_parlour"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_3xl"
+        app:layout_constraintStart_toStartOf="@id/image_restaurant"
+        app:layout_constraintTop_toBottomOf="@id/image_restaurant" />
+
+    <TextView
+        android:id="@+id/dollar_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/size_l"
+        app:layout_constraintStart_toStartOf="@id/text_restaurant"
+        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+
+    <TextView
+        android:id="@+id/restaurant_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xs"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/icecream_parlour_win"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/size_l"
+        app:layout_constraintStart_toEndOf="@id/dollar_sign"
+        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_s"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/icecream_parlour_win_percent"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/size_l"
+        app:layout_constraintStart_toEndOf="@id/restaurant_win"
+        app:layout_constraintTop_toBottomOf="@id/text_restaurant" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:background="@drawable/achievement_card_style_first_week"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_win" />
+</androidx.constraintlayout.widget.ConstraintLayout>
