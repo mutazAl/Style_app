@@ -26,7 +26,7 @@
             <include
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/view_user_card"
+                android:id="@+id/include_user_card"
                 layout="@layout/user_card" />
 
             <include
