@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userCardBinding: UserCardBinding
     private lateinit var welcomeCardBinding: WelcomeCardBinding
     private lateinit var achievementCardFirstWeekBinding: AchievementCardFirstWeekBinding
+    private lateinit var investementFirstCardBinding: InvestementFirstCardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,12 +39,16 @@ class MainActivity : AppCompatActivity() {
                  */
                 userCardBinding = includeUserCard
                 welcomeCardBinding = welcomeCard
+                achievementCardFirstWeekBinding=achievementsFirstBlock
+                investementFirstCardBinding=investementFirstBlock
 
             }
         }
         // Hier die Methode aufrufen
         setupCardView()
         setupwelcomeCard()
+        setupachievementsFirstBlock()
+        setupInvestementFirstBlock()
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -51,8 +56,7 @@ class MainActivity : AppCompatActivity() {
         userCardBinding.apply {
             amount.text = "100 000 000"
             currency.text = "€"
-            userImage.setImageDrawable(getDrawable(R.drawable.safak))
-
+            userImage.setImageDrawable(getDrawable(safak))
 
 
         }
@@ -63,5 +67,13 @@ class MainActivity : AppCompatActivity() {
         welcomeCardBinding.userName.text = "Safak"
 
     }
+private fun setupachievementsFirstBlock(){
+    achievementCardFirstWeekBinding.weekNumber.text="20"
+    achievementCardFirstWeekBinding.weekNumber.setTextColor(getColor(R.color.white))
 
+
+}
+    private fun setupInvestementFirstBlock(){
+        investementFirstCardBinding.imageRestaurant.setImageDrawable(getDrawable(R.drawable.ic_coffee))
+    }
 }

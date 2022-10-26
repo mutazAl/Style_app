@@ -43,7 +43,7 @@
                 android:id="@+id/user_image"
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
-                android:background="@drawable/safak"
+                tools:background="@drawable/safak"
                 android:elevation="1dp" />
 
 
